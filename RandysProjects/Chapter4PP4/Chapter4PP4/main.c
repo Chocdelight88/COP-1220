@@ -47,7 +47,7 @@ void inputWeight();
 
 void computeFee(int y, int w);
 
-void reportFee();
+void reportFee(int w,int wc,float f);
 
 void welcomeUser()
 {
@@ -61,6 +61,7 @@ int main(int argc, const char *argv[])
 	inputYear();
 	inputWeight();
 	computeFee(year, weight);
+    reportFee(weight, weightClass, fee);
 
 	return 0;
 }
@@ -112,4 +113,9 @@ void computeFee(int y, int w)
 	}
 }
 
-void reportFee() {}
+void reportFee(int w,int wc,float f) {
+
+    
+
+
+}
