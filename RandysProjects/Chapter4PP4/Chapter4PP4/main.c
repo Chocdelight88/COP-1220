@@ -11,10 +11,18 @@
 #define TWENTYSEVENHUNDRED 2700
 #define THIRTYFIVEHUNDRED 3500
 #define THIRTYEIGHTHUNDRED 3800
+#define ONE 1
+#define TWO 2
+#define THREE 3
+#define FOUR 4
+#define FIVE 5
+#define SIX 6
+#define SEVEN 7
+#define EIGHT 8
 
 int year;
 int weight;
-
+int weightClass;
 
 int twentySevenHundred;
 int thirtyEightHundred;
@@ -24,6 +32,7 @@ void inputYear();
 void inputWeight();
 
 float computeFee(int y, int w);
+void reportFee();
 
 void welcomeUser(){
 
@@ -66,27 +75,65 @@ float computeFee(int y, int w){
     
     if (year <= 1970){
     
-        if (weight < TWENTYSEVENHUNDRED){}
-        else if (weight <= THIRTYEIGHTHUNDRED){}
-        else if (weight > THIRTYEIGHTHUNDRED){}
+        if (weight < TWENTYSEVENHUNDRED){
+        
+            weightClass = ONE;
+        
+        }
+        
+        else if (weight <= THIRTYEIGHTHUNDRED){
+        
+            weightClass = TWO;
+        
+        }
+        
+        else if (weight > THIRTYEIGHTHUNDRED){
+        
+            
+            weightClass = THREE;
+        
+        }
         
     }
     
     else if (year <= 1979){
    
-        if (weight < TWENTYSEVENHUNDRED){}
-        else if (weight <= THIRTYEIGHTHUNDRED){}
-        else if (weight > THIRTYEIGHTHUNDRED){}
+        if (weight < TWENTYSEVENHUNDRED){
+        
+            
+            weightClass = FOUR;
+        }
+        else if (weight <= THIRTYEIGHTHUNDRED){
+        
+            weightClass = FIVE;
+        
+        }
+        else if (weight > THIRTYEIGHTHUNDRED){
+        
+        
+            weightClass = SIX;
+        }
     
     }
     
     else if (year >= 1980){
     
-        if (weight < THIRTYFIVEHUNDRED){}
-        else if (weight >= THIRTYFIVEHUNDRED){}
+        if (weight < THIRTYFIVEHUNDRED){
+        
+            weightClass = SEVEN;
+            
+        }
+        
+        else if (weight >= THIRTYFIVEHUNDRED){
+        
+            weightClass = EIGHT;
+            
+        }
     
     }
     
     
     return fee;
 }
+
+void reportFee(){}
