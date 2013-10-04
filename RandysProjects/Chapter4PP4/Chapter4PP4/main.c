@@ -10,7 +10,7 @@
 
 
 int year;
-int wieght;
+int weight;
 
 void welcomeUser();
 void inputYear();
