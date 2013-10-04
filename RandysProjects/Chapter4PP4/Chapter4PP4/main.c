@@ -7,6 +7,7 @@
 //
 
 #include <stdio.h>
+#include <string.h>
 
 #define TWENTYSEVENHUNDRED	2700
 #define THIRTYFIVEHUNDRED	3500
@@ -41,6 +42,8 @@ int		thirtyEightHundred;
 
 void welcomeUser();
 
+void myMain();
+
 void inputYear();
 
 void inputWeight();
@@ -51,19 +54,39 @@ void reportFee(int w,int wc,float f);
 
 void welcomeUser()
 {
-	printf("Welcom e to this super awesome program!\n\n");
+    
+	printf("Welcome to this super awesome program!\n\n");
+
 }
 
 int main(int argc, const char *argv[])
 {
-	welcomeUser();
+    myMain();
+	return 0;
+}
 
+
+void myMain(){
+    
+    welcomeUser();
 	inputYear();
 	inputWeight();
 	computeFee(year, weight);
     reportFee(weight, weightClass, fee);
+    
+    char yesOrNo[100];
+	printf("Would you like to calculate another? y/n ");
+	scanf("%s", yesOrNo);
+    
+	if (strncmp(yesOrNo, "y", 2) == 0) {
+		printf("\n");
+		myMain();
+	}
+    
+	if (strncmp(yesOrNo, "n", 2) == 0) {
+		printf("Good bye!");
+	}
 
-	return 0;
 }
 
 void inputYear()
