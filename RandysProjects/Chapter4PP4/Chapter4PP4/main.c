@@ -97,7 +97,7 @@ void inputYear()
 
 void inputWeight()
 {
-	printf("Please enter the Model Weight --> ");
+	printf("\nPlease enter the Model Weight --> ");
 	scanf("%d", &weight);
 }
 
@@ -138,7 +138,7 @@ void computeFee(int y, int w)
 
 void reportFee(int w,int wc,float f) {
 
-    printf("***************************\n\n");
+    printf("\n***************************\n\n");
     
     printf("The weight of the vehicle is %i.\nThe weight class is %i\nThe fee is %.2f.\n \n\n",w,wc,f);
 
