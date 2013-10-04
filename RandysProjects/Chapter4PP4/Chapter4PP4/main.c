@@ -115,7 +115,7 @@ void computeFee(int y, int w)
 
 void reportFee(int w,int wc,float f) {
 
-    
+    printf("reportFee\n\n");
 
 
 }
