@@ -8,11 +8,23 @@
 
 #include <stdio.h>
 
+
+int year;
+int wieght;
+
+void welcomeUser();
+void inputYear();
+
+
+
+void welcomeUser(){}
+
 int main(int argc, const char * argv[])
 {
 
     // insert code here...
-    printf("Hello, World!\n");
+    //printf("Hello, World!\n");
     return 0;
 }
 
+void inputYear(){}
