@@ -12,19 +12,33 @@
 int year;
 int weight;
 
+
+int twentySevenHundred;
+int thirtyEightHundred;
+
 void welcomeUser();
 void inputYear();
 
+float computeFee(int y, int w);
 
 
 void welcomeUser(){}
 
 int main(int argc, const char * argv[])
 {
-
+    twentySevenHundred = 2700;
+    thirtyEightHundred = 3800;
+    
     // insert code here...
     //printf("Hello, World!\n");
     return 0;
 }
 
 void inputYear(){}
+
+float computeFee(int y, int w){
+
+    float fee = 0.0;
+    
+    return fee;
+}
