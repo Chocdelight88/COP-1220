@@ -116,14 +116,9 @@ void computeFee(int y, int w)
 void reportFee(int w,int wc,float f) {
 
     printf("***************************\n\n");
-    printf("***************************\n\n");
-    printf("***************************\n\n");
-    printf("***************************\n\n");
     
-    printf("%i %i %.2f \n\n",w,wc,f);
+    printf("The weight of the vehicle is %i.\nThe weight class is %i\nThe fee is %.2f.\n \n\n",w,wc,f);
 
-    printf("***************************\n\n");
-    printf("***************************\n\n");
     printf("***************************\n\n");
 
 }
