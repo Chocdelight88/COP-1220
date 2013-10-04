@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1380843858 source:l:\cop-1220\question3\taxcode\main.c
+	<stdio.h>
+	<stdlib.h>
+
