@@ -115,7 +115,15 @@ void computeFee(int y, int w)
 
 void reportFee(int w,int wc,float f) {
 
-    printf("reportFee\n\n");
+    printf("***************************\n\n");
+    printf("***************************\n\n");
+    printf("***************************\n\n");
+    printf("***************************\n\n");
+    
+    printf("%i %i %.2f \n\n",w,wc,f);
 
+    printf("***************************\n\n");
+    printf("***************************\n\n");
+    printf("***************************\n\n");
 
 }
