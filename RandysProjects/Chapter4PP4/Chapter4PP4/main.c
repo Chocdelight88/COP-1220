@@ -8,6 +8,8 @@
 
 #include <stdio.h>
 
+#define TWENTYSEVENHUNDRED 2700
+#define THIRTYEIGHTHUNDRED 3800
 
 int year;
 int weight;
@@ -18,27 +20,53 @@ int thirtyEightHundred;
 
 void welcomeUser();
 void inputYear();
+void inputWeight();
 
 float computeFee(int y, int w);
 
+void welcomeUser(){
 
-void welcomeUser(){}
+
+    printf("Welcom e to this super awesome program!\n\n");
+    
+    
+}
 
 int main(int argc, const char * argv[])
 {
-    twentySevenHundred = 2700;
-    thirtyEightHundred = 3800;
+    welcomeUser();
+
+    inputYear();
+    inputWeight();
+    computeFee(year, weight);
     
-    // insert code here...
-    //printf("Hello, World!\n");
     return 0;
 }
 
-void inputYear(){}
+void inputYear(){
+
+    printf("Please enter the Model Year --> ");
+    scanf("%d",&year);
+
+    
+}
+
+
+void inputWeight(){
+
+   printf("Please enter the Model Weight --> ");
+    scanf("%d",&weight);
+
+}
 
 float computeFee(int y, int w){
 
     float fee = 0.0;
+    
+    if (year <= 1970){}
+    else if (year <= 1979){}
+    else if (year >= 1980){}
+    
     
     return fee;
 }
