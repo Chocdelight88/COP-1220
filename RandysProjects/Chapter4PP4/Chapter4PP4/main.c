@@ -9,6 +9,7 @@
 #include <stdio.h>
 
 #define TWENTYSEVENHUNDRED 2700
+#define THIRTYFIVEHUNDRED 3500
 #define THIRTYEIGHTHUNDRED 3800
 
 int year;
@@ -63,9 +64,28 @@ float computeFee(int y, int w){
 
     float fee = 0.0;
     
-    if (year <= 1970){}
-    else if (year <= 1979){}
-    else if (year >= 1980){}
+    if (year <= 1970){
+    
+        if (weight < TWENTYSEVENHUNDRED){}
+        else if (weight <= THIRTYEIGHTHUNDRED){}
+        else if (weight > THIRTYEIGHTHUNDRED){}
+        
+    }
+    
+    else if (year <= 1979){
+   
+        if (weight < TWENTYSEVENHUNDRED){}
+        else if (weight <= THIRTYEIGHTHUNDRED){}
+        else if (weight > THIRTYEIGHTHUNDRED){}
+    
+    }
+    
+    else if (year >= 1980){
+    
+        if (weight < THIRTYFIVEHUNDRED){}
+        else if (weight >= THIRTYFIVEHUNDRED){}
+    
+    }
     
     
     return fee;
